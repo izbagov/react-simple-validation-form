@@ -47,10 +47,7 @@ class Form extends Component {
       errors.emailError = "Requires valid email";
     }
 
-    this.setState({
-      ...this.state,
-      ...errors
-    })
+    this.setState(errors)
     
     return isError;
   }
